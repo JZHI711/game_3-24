@@ -293,20 +293,6 @@ MonoBehaviour:
   audioSource: {fileID: 905901658}
   audioClip: {fileID: 8300000, guid: 707d533b18a364142897701cc3b4027e, type: 3}
   delay: 0
---- !u!114 &227469776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: HasGlasses
-  satisfied: 1
-  hash: -1554804606
 --- !u!114 &236826289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,10 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: new condition collection
-  requiredConditions:
-  - {fileID: 1497693457}
-  reactionCollection: {fileID: 0}
 --- !u!114 &682091567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,20 +614,6 @@ MonoBehaviour:
   delay: 2
   animator: {fileID: 0}
   trigger: 
---- !u!114 &923580822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: HasGlasses
-  satisfied: 1
-  hash: -1554804606
 --- !u!1001 &1043656357
 Prefab:
   m_ObjectHideFlags: 0
@@ -915,10 +883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: LaserOff
-  requiredConditions:
-  - {fileID: 1192381676}
-  reactionCollection: {fileID: 1114146747}
 --- !u!1 &1114146746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,20 +1022,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd26dac15723bf047941895f28e6c242, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1192381676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: LasersDeactivated
-  satisfied: 1
-  hash: -2015270594
 --- !u!114 &1231559414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,7 +1120,7 @@ Prefab:
     - target: {fileID: 11485606, guid: d48734bd22479a14cb1a52b40aa09db4, type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1276257938}
+      objectReference: {fileID: 1276257943}
     - target: {fileID: 194222, guid: d48734bd22479a14cb1a52b40aa09db4, type: 2}
       propertyPath: m_Name
       value: LaserGridInteractable
@@ -1248,15 +1198,10 @@ Prefab:
       propertyPath: defaultReaction
       value: 
       objectReference: {fileID: 1276257941}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11484708, guid: d48734bd22479a14cb1a52b40aa09db4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d48734bd22479a14cb1a52b40aa09db4, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1276257938 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11484708, guid: d48734bd22479a14cb1a52b40aa09db4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1276257937}
-  m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
 --- !u!4 &1276257939 stripped
 Transform:
   m_PrefabParentObject: {fileID: 474418, guid: d48734bd22479a14cb1a52b40aa09db4, type: 2}
@@ -1275,6 +1220,25 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 491826, guid: d48734bd22479a14cb1a52b40aa09db4, type: 2}
   m_PrefabInternal: {fileID: 1276257937}
+--- !u!114 &1276257943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276257940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionLocation: {fileID: 1276257942}
+  conditionCollections:
+  - description: LaserOff
+    requiredConditions:
+    - description: 8
+      satisfied: 1
+    reactionCollection: {fileID: 1114146747}
+  defaultReactionCollection: {fileID: 1276257941}
 --- !u!114 &1283123098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,10 +1250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: HasGlasses
-  requiredConditions:
-  - {fileID: 923580822}
-  reactionCollection: {fileID: 1955368934}
 --- !u!114 &1340991283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,20 +1264,6 @@ MonoBehaviour:
   message: ACCESS DENIED!
   textColor: {r: 1, g: 0, b: 0, a: 1}
   delay: 0
---- !u!114 &1497693457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: pouabv
-  satisfied: 0
-  hash: 0
 --- !u!1 &1536750085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,11 +1405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: HasGlassesAndCoffee
-  requiredConditions:
-  - {fileID: 227469776}
-  - {fileID: 2070106622}
-  reactionCollection: {fileID: 1627901432}
 --- !u!1001 &1746140237
 Prefab:
   m_ObjectHideFlags: 0
@@ -1734,8 +1675,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: {fileID: 114000012991011084, guid: fd02464d008c790478d9826aba7c7847,
-    type: 2}
+  condition:
+    description: 0
+    satisfied: 0
   satisfied: 1
 --- !u!114 &1921767126
 MonoBehaviour:
@@ -1795,17 +1737,3 @@ MonoBehaviour:
   reactions:
   - {fileID: 104556140}
   - {fileID: 294159636}
---- !u!114 &2070106622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: HasCoffee
-  satisfied: 1
-  hash: -1486269948

@@ -313,6 +313,7 @@
     <Compile Include="Assets\Scripts\ScriptableObjects\Interaction\Reactions\ImmediateReactions\TextReaction.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\ResettableScriptableObject.cs" />
+    <Compile Include="Assets\test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\OFL.txt" />
